@@ -1,1 +1,1 @@
-# Kasm-Krita
+# Kasm-kdenlive

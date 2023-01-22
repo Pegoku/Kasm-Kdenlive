@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -ex
-START_COMMAND="krita"
-PGREP="krita"
+START_COMMAND="kdenlive"
+PGREP="kdenlive"
 export MAXIMIZE="true"
-export MAXIMIZE_NAME="Krita | Digital Painting. Creative Freedom."
+export MAXIMIZE_NAME="kdenlive | Free and Open Source Video Editor"
 MAXIMIZE_SCRIPT=$STARTUPDIR/maximize_window.sh
 DEFAULT_ARGS=""
 ARGS=${APP_ARGS:-$DEFAULT_ARGS}

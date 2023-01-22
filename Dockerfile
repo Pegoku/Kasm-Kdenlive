@@ -11,10 +11,10 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 
 
-COPY ./src/ubuntu/install/krita $INST_SCRIPTS/krita/
-RUN bash $INST_SCRIPTS/krita/install_krita.sh && rm -rf $INST_SCRIPTS/krita/
+COPY ./src/ubuntu/install/kdenlive $INST_SCRIPTS/kdenlive/
+RUN bash $INST_SCRIPTS/kdenlive/install_kdenlive.sh && rm -rf $INST_SCRIPTS/kdenlive/
 
-COPY ./src/ubuntu/install/krita/custom_startup.sh $STARTUPDIR/custom_startup.sh
+COPY ./src/ubuntu/install/kdenlive/custom_startup.sh $STARTUPDIR/custom_startup.sh
 RUN chmod +x $STARTUPDIR/custom_startup.sh
 RUN chmod 755 $STARTUPDIR/custom_startup.sh
 
